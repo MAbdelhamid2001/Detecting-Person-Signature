@@ -1,0 +1,32 @@
+cd yolov5
+
+python detect.py --weights runs/train/exp8/weights/best.pt --img 640 --conf 0.25 --source C:\Users\mhmed\Downloads\mtest.tif
+
+
+
+
+
+python detect.py --weights runs/train/exp8/weights/best.pt --img 640 --conf 0.25 --source C:\Users\mhmed\yolov5_ws\data\images\training\36.tif
+
+
+
+--conf-thres', type=float, default=0.25, help='confidence threshold')
+ --iou-thres', type=float, default=0.45, help='NMS IoU threshold')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+training
+cd yolov5
+python train.py --img 640 --batch 16 --epochs 15 --data ../dataset.yaml --weights yolov5s.pt
+
